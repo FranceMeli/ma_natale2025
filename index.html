@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎄 Natale 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<div class="container">
+  <h1>🎁 Natale 2025</h1>
+
+  <div class="description">
+    <p>
+      Il gioco è composto da 7 domande, ogni domanda può sbloccare una carta evento o una carta azione.<br><br>
+      Le risposte sono composte esclusivamente da una parola o numero e devo essere scritte solo in minuscolo. <br><br>
+      Dopo aver dato la risposta, che sia giusta o sbagliata, attendi 2 secondi per la successiva.</br>
+      Al termine delle domande avrai composto il tuo deck di carte e riceverai altre informazioni.
+    </p>
+
+    <!-- BOTTONE INIZIA -->
+    <button id="startBtn" onclick="startGame()">🎄 Inizia</button>
+  </div>
+
+  <!-- BOX DOMANDE (NASCOSTO ALL'INIZIO) -->
+  <div class="card-box hidden" id="gameBox">
+    <h2 id="question"></h2>
+    <input id="answer" placeholder="Scrivi la risposta">
+    <br>
+    <button onclick="checkAnswer()">Conferma</button>
+
+    <!-- FEEDBACK -->
+    <p id="feedback"></p>
+
+    <br>
+    <button onclick="openModal()">🃏 Vedi le carte</button>
+  </div>
+</div>
+
+<!-- MODALE -->
+<div id="modal" class="modal hidden">
+  <h2>🃏 Carte sbloccate</h2>
+  <div class="grid" id="cardsGrid"></div>
+  <br>
+  <button onclick="closeModal()">Chiudi</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
