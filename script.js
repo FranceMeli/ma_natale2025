@@ -1,11 +1,11 @@
 const riddles = [
-  { question: "1) Cosa dobbiamo mettere su una fetta di pane?", answer: "olio", cardType: "evento", cardName: "Fulminacci" },
-  { question: "2) La regione di Riace, Tropea e Cosenza?", answer: "calabria", cardType: "evento", cardName: "Brunori Sas" },
-  { question: "3) Soprannome del più forte difensore (goleador) di Serie A?", answer: "specchio", cardType: "evento", cardName: "Turista" },
-  { question: "4) Per Flavio, abbiamo tutta la vita davanti a un?", answer: "bar", cardType: "azione", cardName: "Cambio 'evento - regalo'" },
-  { question: "5) Sei quel sassolino, nel cielo infinito, nella notte di?", answer: "natale", cardType: "evento", cardName: "Lucio Corsi" },
-  { question: "6) Quante gare ha vinto Mads all'ultimo Giro d'Italia?", answer: "4", cardType: "evento", cardName: "Evento a piacere" },
-  { question: "7) Capitale della Repubblica Centrafricana?", answer: "bangui", cardType: "azione", cardName: "Chiedi sostituzione evento con altro a piacere (da scegliere insieme)" }
+  { question: "1) Cosa dobbiamo mettere su una fetta di pane?", answer: "olio", cardType: "evento", cardName: "Villa Gregoriana" },
+  { question: "2) La regione di Riace, Tropea e Cosenza?", answer: "calabria", cardType: "evento", cardName: "Abbazia San Fruttuoso" },
+  { question: "3) Soprannome del più forte difensore (goleador) di Serie A?", answer: "specchio", cardType: "evento", cardName: "Orto colle dell'infinito" },
+  { question: "4) Per Flavio, abbiamo tutta la vita davanti a un?", answer: "bar", cardType: "azione", cardName: "Cambio associazione" },
+  { question: "5) Sei quel sassolino, nel cielo infinito, nella notte di?", answer: "natale", cardType: "evento", cardName: "Villa dei Vescovi" },
+  { question: "6) Quante gare ha vinto Mads all'ultimo Giro d'Italia?", answer: "4", cardType: "evento", cardName: "Torre Campatelli" },
+  { question: "7) Capitale della Repubblica Centrafricana?", answer: "bangui", cardType: "azione", cardName: "Sostituzione" }
 ];
 
 let current = 0;
