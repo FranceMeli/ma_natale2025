@@ -1,11 +1,11 @@
 const riddles = [
-  { question: "1) Cosa dobbiamo mettere su una fetta di pane?", answer: "olio", cardType: "evento", cardName: "Villa Gregoriana" },
-  { question: "2) La regione di Riace, Tropea e Cosenza?", answer: "calabria", cardType: "evento", cardName: "Abbazia San Fruttuoso" },
-  { question: "3) Soprannome del più forte difensore (goleador) di Serie A?", answer: "specchio", cardType: "evento", cardName: "Orto colle dell'infinito" },
-  { question: "4) Per Flavio, abbiamo tutta la vita davanti a un?", answer: "bar", cardType: "azione", cardName: "Cambio associazione" },
-  { question: "5) Sei quel sassolino, nel cielo infinito, nella notte di?", answer: "natale", cardType: "evento", cardName: "Villa dei Vescovi" },
-  { question: "6) Quante gare ha vinto Mads all'ultimo Giro d'Italia?", answer: "4", cardType: "evento", cardName: "Torre Campatelli" },
-  { question: "7) Capitale della Repubblica Centrafricana?", answer: "bangui", cardType: "azione", cardName: "Sostituzione" }
+  { question: "1) Nell'acronimo FAI, la A sta per?", answer: "ambiente", cardType: "evento", cardName: "Villa Gregoriana" },
+  { question: "2) In che regione si trova Mantova?", answer: "lombardia", cardType: "evento", cardName: "Abbazia San Fruttuoso" },
+  { question: "3) All'ultimo festival dello sport, quale grande allenatore abbiamo visto all'Auditorium?", answer: "velasco", cardType: "evento", cardName: "Orto colle dell'infinito" },
+  { question: "4) Anche per i Pinguini, chi è Star, in un mondo di John e Paul?", answer: "ringo", cardType: "azione", cardName: "Cambio associazione" },
+  { question: "5) Il nome dello sceriffo di Stranger Things?", answer: "hopper", cardType: "evento", cardName: "Villa dei Vescovi" },
+  { question: "6) La tua pista preferita all'Abetone?", answer: "riva", cardType: "evento", cardName: "Torre Campatelli" },
+  { question: "7) Chi ha vinto X-Factor?", answer: "rob", cardType: "azione", cardName: "Sostituzione" }
 ];
 
 let current = 0;
@@ -33,7 +33,7 @@ function loadQuestion() {
   if (current < riddles.length) {
     questionEl.innerText = riddles[current].question;
   } else {
-    questionEl.innerText = "🎉 Hai completato il gioco! <br>In camerina dentro l\'armadio, trovi un sacchetto con il set del gioco. Senza barare prendi SOLO le carte che hai vinto (colore rosso) e disponi senza guardare le mie carte nell'ordine in cui le trovi. Associa le carte 'evento' alle mie, le carte azioni le puoi usare alla fine per eventuali modifiche. Crea quindi le coppie e fai una foto, poi applica le carte azione. Al termine scrivi tutto nella tabella finale.";
+   questionEl.innerHTML = "🎉 Hai completato il gioco! <br>Cerca dentro l'albero e trova un sacchetto con il set del gioco. <br>Utilizza il tabellone, disponi sulla prima riga SOLO le carte che hai vinto (colore arancio) e sulla seconda riga le mie carte verdi nell'ordine in cui le trovi, SENZA guardare. Le carte azione sono quelle arancio-celeste, utilizzabili alla fine. </br></br> Crea le coppie, associando le tue carte alle mie affidandoti alla fortuna. Le carte azione le puoi usare alla fine per eventuali modifiche. Al termine scrivi le coppie ottenute sotto i rispettivi numeri. Alla tua carta corrisponderà un regalo da sfruttare al dovuto momento nel 2026";
     answerEl.style.display = "none";
   }
 }
